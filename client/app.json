@@ -1,0 +1,17 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/test/test",
+    "pages/garbage/garbage",
+    "pages/card/card"
+  ],
+  "window": {
+    "backgroundColor": "#ffd93e",
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#ffd93e",
+    "navigationBarTitleText": "垃圾去哪儿",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true
+  },
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,107 @@
+/* client/pages/test/test.wxss */
+
+.background{
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+
+.number{
+  margin-top: 100rpx;
+  text-align: center;
+}
+
+.numText{
+  font-size: 50rpx;
+  font-weight: bold;
+  color: #000;
+  text-shadow: 2rpx 2rpx 3rpx #efefef;
+  letter-spacing: 5rpx;
+}
+
+.questionContent{
+  margin: 80rpx 50rpx;
+  text-align: center;
+}
+
+.hidden{
+  display: none;
+}
+
+.question{
+  font-size: 40rpx;
+  color: #000;
+  text-shadow: 2rpx 2rpx 3rpx #efefef;
+  letter-spacing: 2rpx;
+}
+
+.answerBtn{
+  height: 100rpx;
+  width: 450rpx;
+  margin-top: 50rpx;
+  margin-left: 150rpx;
+  background-color: white;
+  border-radius: 30rpx;
+}
+
+.answer{
+  width: 450rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  position: relative;
+  top: 12rpx;
+  left: 10rpx;
+  background-color: #32cc7f;
+  border-radius: 25rpx;
+  vertical-align: middle;
+}
+
+.answer text{
+  font-size: 45rpx;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: white;
+  letter-spacing: 20rpx;
+  padding-left: 20rpx;
+}
+
+.finish{
+  text-align: center;
+  margin-top: 50%;
+}
+
+.finish text{
+  font-size: 70rpx;
+  color: #000;
+  text-shadow: 2rpx 2rpx 3rpx #efefef;
+  letter-spacing: 2rpx;
+}
+
+.backBtnWrapper{
+  height: 100rpx;
+  width: 450rpx;
+  margin-top: 50rpx;
+  margin-left: 150rpx;
+  background-color: white;
+  border-radius: 30rpx;
+}
+
+.backBtn{
+  width: 450rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  position: relative;
+  top: 12rpx;
+  left: 10rpx;
+  background-color: #32cc7f;
+  border-radius: 25rpx;
+  vertical-align: middle;
+}
+
+.backBtn text{
+  font-size: 45rpx;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: white;
+}

@@ -1,0 +1,35 @@
+<!--client/pages/home/home.wxml-->
+<view class='unlogin' wx:if="{{!userInfo}}">
+  <view class='unlogin-info'>
+    <view class='unlogin-avatar'></view>
+    <view class='unlogin-tip'>
+      <view class='unlogin-text1'>未登录</view>
+      <view class='unlogin-text2'>请登录后使用</view>
+    </view>
+  </view>
+  <button class="unlogin-loginbtn" open-type="getUserInfo" bindgetuserinfo="onTapLogin">微信登录</button>
+</view>
+<view class="login" wx:else>
+  <image class="background" src="/resource/images/background.png"></image>
+
+  <view class="titleWrapper">
+    <text class="title">垃圾去哪儿</text>
+  </view>
+  <view class="border"></view>
+
+  <button class="scanCodeBtn" bindtap="onScanCode">
+    <view><image class="scanPng" src="/resource/images/scan.png"></image></view>
+    <view class="scanText">扫一扫</view>
+  </button>
+
+  <view class="cardWrapper">
+    <button class="cardBtn" bindtap="onTapCard"><text>垃圾卡片</text></button>
+  </view>
+  
+  <view class="testWrapper">
+    <button class="testBtn" bindtap="onTapTest"><text>测一测</text></button>
+  </view>
+
+</view>
+
+

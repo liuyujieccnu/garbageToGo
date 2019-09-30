@@ -1,0 +1,39 @@
+<!--client/pages/test/test.wxml-->
+<image class="background" src="/resource/images/background.png"></image>
+
+<!-- <view class="number">
+  <text class="numText">【第一题】</text>
+</view>
+
+<view class="questionContent">
+  <view class="question">下面哪种垃圾是干垃圾？</view>
+</view>
+
+<view class="answerContent">
+  <view class="answerBtn"><button class="answer"><text>塑料袋</text></button></view>
+  <view class="answerBtn"><button class="answer"><text>苹果核</text></button></view>
+  <view class="answerBtn"><button class="answer"><text>易拉罐</text></button></view>
+  <view class="answerBtn"><button class="answer"><text>旧报纸</text></button></view> 
+</view> -->
+
+<view wx:for="{{questions}}" wx:for-item="question" wx:key="{{question.id}}" wx:for-index="ix" class="contentWrapper {{ix==nowQuestion?'':'hidden'}}">
+  <view class="number">
+    <text class="numText">【{{questionNum[ix]}}】</text>
+  </view>
+  <view class="questionContent">
+    <view class="question">{{question.question}}</view>
+  </view>
+  <view class="answerContent">
+    <view class="answerBtn"><button class="answer" id='1' bindtap="onOption"><text>{{question.option1}}</text></button></view>
+    <view class="answerBtn"><button class="answer" id='2' bindtap="onOption"><text>{{question.option2}}</text></button></view>
+    <view class="answerBtn"><button class="answer" id='3' bindtap="onOption"><text>{{question.option3}}</text></button></view>
+    <view class="answerBtn"><button class="answer" id='4' bindtap="onOption"><text>{{question.option4}}</text></button></view> 
+  </view>
+</view>
+<view wx:if="{{nowQuestion==5}}" class="finish">
+    <text>恭喜你，完成啦！</text>
+    <view class="backBtnWrapper" >
+      <button class="backBtn" bindtap="onBackHome"><text>返回主页</text></button>
+    </view>
+</view>
+

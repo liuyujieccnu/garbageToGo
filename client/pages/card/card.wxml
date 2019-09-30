@@ -1,0 +1,31 @@
+<!--client/pages/card/card.wxml-->
+<image class="background" src="/resource/images/background.png"></image>
+<view class="cardWrapper">
+  <view class='category'>干垃圾</view>
+  <view class="imageContent">
+    <view wx:for="{{ganGarbages}}" wx:for-item="ganGarbage" wx:for-index="ix" class="imageWrapper">
+        <image src="{{ganGarbages[ix].image}}" class="garbageImage" bindtap="onDetail" id="{{ganGarbage.garbage_id}}"></image>
+    </view>
+  </view>
+  <view class='category'>可回收垃圾</view>
+  <view class="imageContent">
+    <view wx:for="{{huiGarbages}}" wx:for-item="huiGarbage" wx:for-index="ix" class="imageWrapper"  >
+        <image src="{{huiGarbages[ix].image}}" class="garbageImage" id="{{huiGarbage.garbage_id}}" bindtap="onDetail" ></image>
+    </view>
+  </view>
+
+  <view class='category'>湿垃圾</view>
+  <view class="imageContent">
+    <view wx:for="{{shiGarbages}}" wx:for-item="shiGarbage" wx:for-index="ix" class="imageWrapper" >
+        <image src="{{shiGarbages[ix].image}}" class="garbageImage" bindtap="onDetail" id="{{shiGarbage.garbage_id}}" ></image>
+    </view>
+  </view>
+
+  <view class='category'>有害垃圾</view>
+  <view class="imageContent">
+    <view wx:for="{{haiGarbages}}" wx:for-item="haiGarbage" wx:for-index="ix" class="imageWrapper" bindtap="onDetail" id="{{haiGarbage.garbage_id}}">
+        <image src="{{haiGarbages[ix].image}}" class="garbageImage" bindtap="onDetail" id="{{haiGarbage.garbage_id}}"></image>
+    </view>
+  </view>
+  
+</view>

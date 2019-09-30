@@ -1,0 +1,22 @@
+<!--client/pages/garbage/garbage.wxml-->
+<image class="background" src="/resource/images/background.png"></image>
+<view class="card">
+  <view class='category'>{{garbageResult.category}}</view>
+
+  <!-- <image class='garbageImage' src="{{garbageResult.image}}"></image> 
+  <view class='title'>{{garbageResult.title}}</view> -->
+  <view wx:for="{{images}}" wx:for-item="image" wx:for-index="ix" class="content {{ix==flag?'':'hidden'}}">
+    <image class="garbageImage" src="{{image}}"></image> 
+    <view class="title" wx:if="{{ix==0}}">{{garbageResult.title}}</view>
+    <view class="text" wx:else>{{descriptions[ix]}}</view>
+  </view>
+
+  <view class='btn'>
+    <button class="button1 {{flag==0?'noneBtn':''}}" bindtap="onPrePage">上一页</button>
+    <button class="button2 {{flag==pages?'noneBtn':''}}" bindtap="onNextPage">下一页</button>
+  </view>
+</view>
+
+
+
+
